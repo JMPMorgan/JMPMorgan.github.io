@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    box-sizing: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #00000013 !important;
+}
+
+nav{
+    background: #000;
+    display: flex;
+    /* justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px;
+}
+
+#nav{
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+#nav>li{
+    color: #fff;
+    margin: 0px 15px;
+    font-size: 20px;
+}
+
+#nav>li>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#info{
+    width: 100%;
+    position: revert;
+}
+
+#container-info{
+    /* padding: 5px 0px; */
+    height: 100%;
+}
+
+
+#img-company{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+}
+
+#text-info>h1{
+    margin: 0;
+}
+
+#text-info{
+    position:  static;
+    /* display: flex; */
+    background: linear-gradient(to right, rgba(0, 0, 255, 0), pink);
+    padding: 132px 0px 0px 0px;
+    height: 23rem;
+    color: #fff;
+    margin:0px 0px 0px 50% ;
+}
+
+#container-services>h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+#container-services{
+    margin:0px 20rem;
+}
+
+#list-services{
+    list-style: none;
+    padding: 0;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#list-services>li{
+    display: block;
+    /* width: 20rem; */
+    /* padding: 2rem; */
+}
+
+.product-image{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+}
+
+ #container-contact{
+    margin: 10px 250px 0px 250px;
+ }
+
+ #container-contact>h1{
+    text-align: center;
+ }
+
+ .text-forms{
+    margin: 0;
+    font-size: small;
+    font-weight:bold;
+ }
+
+ #form-contact{
+    padding: 0px 25px;
+ }
+
+ .container-input{
+    margin-bottom: 5px;
+ }
+
+ .input-form{
+    width: 100%;
+    border-radius: 5px;
+    border: #a0a0a0 1px solid;
+    padding: 7.5px 5px;
+ }
+
+ button[type="submit"]{
+    display: flex;
+    margin-left: auto;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-color: none;
+    color: #fff;
+    font-size: medium;
+    background-color: #000;
+ }
+
+
+ 
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    #container-services{
+        margin: 0px 5rem;
+    }
+    #list-services{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    #container-services{
+        margin: 0px 2rem;
+    }
+
+
+
+
+    #list-services{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #container-contact{
+        margin: 10px 40px 50px ;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #container-services{
+        margin: 0px 2rem;
+    }
+
+    #list-services{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #container-contact{
+        margin: 10px 40px 50px ;
+    }
+   
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    #container-services{
+        margin: 0px 2rem;
+    }
+
+
+
+
+    #list-services{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #container-contact{
+        margin: 10px 40px 50px ;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    #container-services{
+        margin: 0px 2rem;
+    }
+
+    #list-services{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #container-contact{
+        margin: 10px 40px 50px ;
+    }
+
+    #text-info{
+        padding: 0;
+        height: 31.25rem;
+
+        font-size: small;
+    }
+   
+  }
